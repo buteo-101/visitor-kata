@@ -16,4 +16,9 @@ public class DisplayNameVisitor : IResourceVisitor
     {
        DisplayName = resource.Name;
     }
+
+    public void Visit(Other resource)
+    {
+        throw new NotImplementedException();
+    }
 }

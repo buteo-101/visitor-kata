@@ -29,3 +29,11 @@ public class Contractor : IContract
     }
 
 }
+
+public class Delivery : IContract
+{
+    public void Accept(IContractVisitor visitor)
+    {
+        visitor.Visit(this);
+    }
+}

@@ -28,4 +28,9 @@ public class PriceVisitor : IContractVisitor
         Cost = cost;
         Price = price;
     }
+
+    public void Visit(Delivery element)
+    {
+        throw new NotImplementedException();
+    }
 }

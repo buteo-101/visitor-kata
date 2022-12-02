@@ -44,4 +44,9 @@ public class DescriptionVisitor : IContractVisitor
         Description = $"{ReferenceVisitor.Reference}[{string.Join(',', segments)}]";
         PrintableDescription = GetDescriptionHash();
     }
+
+    public void Visit(Delivery element)
+    {
+        throw new NotImplementedException();
+    }
 }

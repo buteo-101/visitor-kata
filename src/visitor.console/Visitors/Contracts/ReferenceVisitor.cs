@@ -16,5 +16,8 @@ public class ReferenceVisitor : IContractVisitor
         Reference = $"C{element?.Name}-{element?.Resources?.Count}";
     }
 
-
+    public void Visit(Delivery element)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -15,8 +15,6 @@ public abstract class Resource
 
 public class Internal : Resource
 {
-
-
     public override void Accept(IResourceVisitor visitor)
     {
         visitor.Visit(this);
@@ -24,6 +22,13 @@ public class Internal : Resource
 }
 
 public class External : Resource
+{
+    public override void Accept(IResourceVisitor visitor)
+    {
+        visitor.Visit(this);
+    }
+}
+public class Other : Resource
 {
     public override void Accept(IResourceVisitor visitor)
     {
